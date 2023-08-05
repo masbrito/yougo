@@ -1,14 +1,43 @@
-import React from "react";
+
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Container, Texts, Cards, Forms, Images } from "./styles";
-
+import { useState } from 'react';
+import emailjs from '@emailjs/browser'
 import Adress_Rafiki from "./assets/Address_Rafiki.png";
 import Address from "./assets/Address.png";
 import CellPhone from "./assets/CellPhone.png";
 import Mail from "./assets/Mail.png";
 
 export default function Contact() {
+    const [name, setName] = useState('')
+    const [email, setEmail]= useState('')
+    const [message, setMessage]= useState('')
+
+    const handleSignupForm = (e)=>{
+        e.preventDefault();
+        if(name === '' || email === '' || message=== ''){
+            alert("Preencha todos os campos!");
+            return;
+        }
+        const templateParams = {
+            from_name: name,
+            email: email,
+            message: message
+            
+        }
+        emailjs.send("service_5ghyv9v", "template_ipohcw9", templateParams,"s0aiFfRq8FxdwkCJ5")
+    .then((response) => {
+        console.log("EMAIL ENVIADO", response.status, response.text)
+        setName('')
+        setEmail('')
+        setMessage('')
+
+    }, (erro) => {
+        console.log("ERRO: ", erro)
+    })
+    }
+  
     return(
         <Container>
             <Header />
@@ -38,17 +67,38 @@ export default function Contact() {
                     </div>
                 </Cards>
 
-                <Forms>
+                <Forms onSubmit={handleSignupForm}>
                     <div className="card">
                         <h2>Formulário de Contato</h2>
                         <div className="info">
-                            <input type="text" placeholder="Seu Nome ..."/>
-                            <input type="text" placeholder="Seu Email ..."/>
+
+                            <input 
+                            type="text" 
+                            placeholder="Seu Nome ..."
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            />
+
+                            <input 
+                            type="email" 
+                            placeholder="Seu Email ..."
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            />
+
+                            
+                            
                         </div>
                         <div className="textarea">
-                            <textarea id="w3review" name="w3review" rows="4" cols="90"></textarea><br/>
-                        </div>
-                        <button>ENVIAR</button>
+                            <textarea id="w3review" name="w3review" rows="4" cols="90"                            
+                            placeholder="Deixe um comentário ..."
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            /> <br/>
+                            </div>
+                        
+                        
+                        <button onClick={handleSignupForm} type="submit"> ENVIAR </button>
                     </div>
                 </Forms>
 
