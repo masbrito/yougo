@@ -26,7 +26,7 @@ export default function Contact() {
             message: message
             
         }
-        emailjs.send("service_5ghyv9v", "template_ipohcw9", templateParams,"s0aiFfRq8FxdwkCJ5")
+        emailjs.send("service_hh5kbqp", "template_at0iidg", templateParams,"jUife1aLvluFfZ4Gz")
     .then((response) => {
         console.log("EMAIL ENVIADO", response.status, response.text)
         setName('')
