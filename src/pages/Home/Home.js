@@ -102,6 +102,14 @@ export default function Home() {
             <Plans>
                 <h1 className="title">Conhecimento digital para o mundo real!</h1>
                 <div className="container">
+                <div className="card second-card">
+                        <h3>Plano Semestral</h3>
+                        <h2>6x</h2>
+                        <h1>R$ 129,90</h1>
+                        <p><Check width="30px" style={{color:"#CA60C6"}}/>Acesso ao conteúdo por 6 meses.</p>
+                        <p><Check width="30px" style={{color:"#CA60C6"}}/>Suporte especializado.</p>
+                        <button>ADQUIRIR</button>
+                    </div>
                     <div className="card">
                         <h3>Plano Anual</h3>
                         <h2>12x</h2>
@@ -110,14 +118,7 @@ export default function Home() {
                         <p><Check width="30px" style={{color:"#CA60C6"}}/>Suporte especializado.</p>
                         <button>ADQUIRIR</button>
                     </div>
-                    <div className="card second-card">
-                        <h3>Plano Anual</h3>
-                        <h2>6x</h2>
-                        <h1>R$ 129,90</h1>
-                        <p><Check width="30px" style={{color:"#CA60C6"}}/>Acesso ao conteúdo por 6 meses.</p>
-                        <p><Check width="30px" style={{color:"#CA60C6"}}/>Suporte especializado.</p>
-                        <button>ADQUIRIR</button>
-                    </div>
+                    
                 </div>
             </Plans>
 
