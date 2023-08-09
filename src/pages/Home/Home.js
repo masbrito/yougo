@@ -108,7 +108,7 @@ export default function Home() {
                         <h1>R$ 129,90</h1>
                         <p><Check width="30px" style={{color:"#CA60C6"}}/>Acesso ao conteúdo por 6 meses.</p>
                         <p><Check width="30px" style={{color:"#CA60C6"}}/>Suporte especializado.</p>
-                        <button>ADQUIRIR</button>
+                        
                     </div>
                     <div className="card">
                         <h3>Plano Anual</h3>
@@ -116,7 +116,7 @@ export default function Home() {
                         <h1>R$ 89,90</h1>
                         <p><Check width="30px" style={{color:"#CA60C6"}}/>Acesso a todo o conteúdo por 1 ano.</p>
                         <p><Check width="30px" style={{color:"#CA60C6"}}/>Suporte especializado.</p>
-                        <button>ADQUIRIR</button>
+                        
                     </div>
                     
                 </div>
