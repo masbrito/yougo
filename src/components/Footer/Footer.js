@@ -22,7 +22,7 @@ export default function Footer() {
                     <img style={{padding: "10px 0px"}} src={logo} alt="Logo YouGO!" />
                     <p>CNPJ: 21.506.509/0001-80</p>
                     <p>Ed. Cirilo Rio, 3º andar - Campina</p>
-                    <button><a href="/contact">ABRIR NO MAPS</a></button>
+                    <button><a href="https://goo.gl/maps/7PqY4hjjFRrJY7Gq9">ABRIR NO MAPS</a></button>
                 </div>
                 <div className="centroSuperior">
                     <h3>Navegação do Site</h3>
