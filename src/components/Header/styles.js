@@ -3,31 +3,44 @@ import styled from "styled-components";
 export const HeaderD = styled.header`
     /* width: 100%; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: #9300A0;
+    background-color: #5E0066;
     padding: 10px 15px;
+    font-weight: 400;   
+       
+    
 
     @media (max-width: 768px) {
         flex-direction: column;
+        
+        
     }
 
     img {
         width: 8%;
         height: 8%;
+        
 
         @media (max-width: 768px) {
             width: 20%;
             height: 20%;
             margin-bottom: 5px;
+            background-color:#5E0066
+            width: 100%;
+
         }
     }
 
     .links {
         @media (max-width: 768px) {
-            display: flex;
-            flex-direction: column;
+            display: flex;            
+            flex-direction: row;
             text-align: center;
+            /*align-items: center;*/
+            background-color: #fff;
+            
+            
         }
     }
 
@@ -36,10 +49,17 @@ export const HeaderD = styled.header`
         text-decoration: none;
         font-size: 18;
         position: relative;
-        padding: 0 10px;
+        padding: 0 8px;
+        
 
         @media (max-width: 768px) {
-            margin-bottom: 15px;
+            margin-bottom: 0px;
+            color: #5E0066
+            
+            
+            
+            
+            
         }
     }
     .links a::after {
