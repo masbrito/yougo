@@ -4,11 +4,12 @@ export const FooterD = styled.footer`
     width: 100%;
 
     .superior {
-        background-color: #EDEDED;
+        background-color: #5E0066;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 15px 25px;
+        color: #fff;
 
         @media (max-width: 768px) {
             flex-direction: column;
@@ -23,6 +24,7 @@ export const FooterD = styled.footer`
                 padding: 10px 15px;
                 margin-top: 10px;
                 cursor: pointer;
+                transition: bacground-color 0.3s;
             }
             a {
                 text-decoration: none;
@@ -30,16 +32,20 @@ export const FooterD = styled.footer`
                 font-weight: 600;
             }
         }
+        button:hover{
+            background-color: #16752C;
+        }
 
         .centroSuperior {
             text-align: center;
 
             h3 {
                 margin-bottom: 10px;
+                color: #fff;
             }
             a {
                 text-decoration: none;
-                color: black;
+                color: #fff;
             }
 
             @media (max-width: 768px) {
@@ -53,9 +59,11 @@ export const FooterD = styled.footer`
 
             h3 {
                 margin-bottom: 10px;
+                color: #fff;
             }
             p {
                 margin-bottom: 5px;
+                color: #fff;
             }
 
             img {

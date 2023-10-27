@@ -6,15 +6,12 @@ export const HeaderD = styled.header`
     justify-content: center;
     align-items: center;
     background-color: #5E0066;
-    padding: 10px 15px;
-    font-weight: 400;   
+    padding: 0px 15px;
+    font-weight: 400; 
        
-    
-
     @media (max-width: 768px) {
-        flex-direction: column;
-        
-        
+        flex-direction: column; 
+                 
     }
 
     img {
@@ -23,11 +20,12 @@ export const HeaderD = styled.header`
         
 
         @media (max-width: 768px) {
-            width: 20%;
-            height: 20%;
+            width: 30%;
+            height: 30%;
             margin-bottom: 5px;
             background-color:#5E0066
             width: 100%;
+            
 
         }
     }
@@ -39,27 +37,23 @@ export const HeaderD = styled.header`
             text-align: center;
             /*align-items: center;*/
             background-color: #fff;
-            
-            
+            font-size: 13px;
+            font-weight: 500;   
+            padding: 10px;            
         }
     }
 
     .links a {
         color: #FFF;
         text-decoration: none;
-        font-size: 18;
+        font-size: 14;
         position: relative;
-        padding: 0 8px;
+        padding: 0 10px;
         
 
         @media (max-width: 768px) {
-            margin-bottom: 0px;
-            color: #5E0066
-            
-            
-            
-            
-            
+            color: #5E0066        
+                
         }
     }
     .links a::after {

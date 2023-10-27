@@ -7,11 +7,11 @@ export default function Header() {
         <HeaderD>
             <img src={logo_branca} alt="Logotipo Branca"/>
             <div className="links">
-                <a href="/">Início</a>
-                <a href="/about">Sobre Nós</a>
-                <a href="/contact">Contato</a>
-                <a href="/tutorial-access">🔶Tutorial de Acesso</a>
-                <a href="/password">🔷Voucher de Leitura</a>
+                <a href="/">INÍCIO</a>
+                <a href="/about">SOBRE NÓS</a>
+                <a href="/contact">CONTATO</a>
+                <a href="/tutorial-access">🔶TUTORIAL DE ACESSO</a>
+                <a href="/password">🔷VOUCHER DE LEITURA</a>
             </div>
         </HeaderD>
     );

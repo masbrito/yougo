@@ -14,6 +14,7 @@ export const Modal = styled.div`
 
     @media (max-width: 768px) {
         flex-direction: column;
+        
     }
 
     .text {
@@ -22,6 +23,8 @@ export const Modal = styled.div`
         @media (max-width: 768px) {
             width: 80%;
             text-align: center;
+           
+            
         }
 
         img {
@@ -32,6 +35,7 @@ export const Modal = styled.div`
         p {
             color: #FFF;
             font-size: 20px;
+            
         }
         
         h1 {
@@ -43,8 +47,10 @@ export const Modal = styled.div`
                 text-decoration: none;
                 color: #FFF;
                 font-size: 16px;
-                font-weight: 600;
-            }
+                font-weight: 600;            
+                
+            }                 
+            
 
             margin: 10px 0px;
             background-color: #26CC4C;
@@ -54,6 +60,12 @@ export const Modal = styled.div`
             padding: 10px;
             outline: none;
             width: 300px;
+            cursor:pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover{
+            background-color: #16752C;
         }
     }
 
@@ -78,12 +90,14 @@ export const Proposal = styled.div`
         text-align: center;
     }
     
+    
     .texts {        
         
         @media (max-width: 768px) {
             width: 80%;      
               
-        }        
+        }    
+            
         
     }
 
@@ -100,6 +114,7 @@ export const Proposal = styled.div`
             flex-direction: column;
             width: 100%;
         }
+        
 
         .card-text {
            
@@ -132,15 +147,17 @@ export const Proposal = styled.div`
 export const How = styled.div`
     /* background-color: #CA60C6; */
     background-image: linear-gradient(to bottom, #9300A0, #CB20DA);
-    width: 90%;
+    width: 75%;
+    
     border-radius: 20px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 40px;
     color: #FFF;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
 
     @media (max-width: 390px) {
-        padding: 9px;
+        padding: 30px;
+        
     }
 
     h1 {
@@ -150,30 +167,35 @@ export const How = styled.div`
     .texts {
         display: flex;
         justify-content: space-around;
-        text-align: center;
+        text-align: left;
         padding: 15px;
 
         @media (max-width: 768px) {
+            width: 100%;
             flex-direction: column;
-            justify-content: center;
-            padding: 5px;
+            justify-content: space-around;
+            padding: 0px;
+            text-align: left;
             
         }
     }
 
-    .text {
-        width: 30%;
-        @media (max-width: 768px) {
-            width: 100%;
-            padding: 5px;
-            
-        }
+    .text {        
+        width: 35%;
+        padding: 20px;
         
+        @media (max-width: 768px) {
+           padding: 0px;
+           width: 100%;            
+            
+        } 
+               
         h1,h3 {
             display: inline-block;
         }
+        
         h1 {
-            margin-right: 10px;
+            margin-right: 5px;
         }
         
     }
@@ -205,16 +227,12 @@ export const Plans = styled.div`
             flex-direction: column;
         }
         
-        .card {
-            
+        .card {            
             
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
-            background-color: #FFF;
-           
+            background-color: #9300A0;           
             box-shadow: 4px 4px 4px rgba(0,0,0,.18);
             padding: 20px;
             border-radius: 15px;
@@ -223,38 +241,60 @@ export const Plans = styled.div`
             .left {
                 display:flex;
                 align-items: center;
+                color: #fff;
             }
             .currency{
                 font-size: 24px;
                 margin-reght: 4px;
+                color: #fff;
             }
 
             h1 {
                 font-size: 80px;
                 margin-bottom: 10px;
-                color: #BA00FC;
+                color: #fff;
+            }
+            h3{
+                color: #fff;
             }
 
             .right{
                 font-size: 24px;
+                color: #fff;
 
             }
             
 
             p {
-                margin-bottom: 5px;
+                margin-bottom: 15px;
+                text-align: left;
+                color: #fff;
             }
 
             button {
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 600;            
+                    
+                }  
+
                 margin-top: 25px;
                 border: none;
                 background-color: #26CC4C;
                 color: #fff;
-                width: 50%;
+                width: 100%;
                 border-radius: 10px;
-                padding: 5px;
+                padding: 10px;
+                outline: none;
                 font-weight: 600;
                 cursor: pointer;
+                transition: background-color 0.3s;
+                
+            }
+            button:hover{
+                background-color:#16752C;
             }
         }
 
@@ -283,15 +323,20 @@ export const Doubts = styled.div`
 
 export const Avaliation = styled.div`
     padding: 30px;
+    text-align: center;
+    
 
     h1 {
         text-align: center;
         padding-bottom: 30px;
     }
+    
+    
 
     .container-card {
         display: flex;
         justify-content: space-evenly;
+        
 
         @media (max-width: 768px) {
             flex-direction: column;
@@ -303,6 +348,12 @@ export const Avaliation = styled.div`
             box-shadow: 4px 4px 4px rgba(0,0,0,.25);
             width: 30%;
             padding: 20px;
+            p{
+                text-align: left;
+            }
+
+
+            
 
             @media (max-width: 768px) {
                 margin: 5px auto;
