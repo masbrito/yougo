@@ -15,17 +15,14 @@ export const HeaderD = styled.header`
     }
 
     img {
-        width: 8%;
-        height: 8%;
-        
-
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    
         @media (max-width: 768px) {
-            width: 20%;
-            height: 20%;
-            margin-bottom: 5px;
-            background-color:#5E0066           
-            
-
+            width: 100%;
+            height: auto;
         }
     }
 
