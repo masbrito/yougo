@@ -83,9 +83,18 @@ export const FooterD = styled.footer`
             flex-direction: column;
             text-align: center;
         }
+        p {
+            
+            color: #5E0066;
+        }
 
         .centroInferior {
-            text-align: center;
-        }
+            display: flex;
+            justify-content: center; /* Centralize horizontalmente */
+            align-items: center; /* Centralize verticalmente */
+          }
+          a {
+            margin-right: 10px;
+          }
     }
 `;

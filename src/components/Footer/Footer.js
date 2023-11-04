@@ -4,11 +4,12 @@ import icon_facebook from "../../assets/icon_facebook.png";
 import icon_instagram from "../../assets/icon_instagram.png";
 import icon_whats from "../../assets/icon_whats.png";
 import threads from "../../assets/threads.png";
-// import icon_gmail from "../../assets/icon_gmail.png";
 
+// import icon_gmail from "../../assets/icon_gmail.png";
 //import { Facebook } from "@styled-icons/entypo-social/Facebook";
 //import { Instagram } from "@styled-icons/boxicons-logos/Instagram";
 //import { Whatsapp } from "@styled-icons/boxicons-logos/Whatsapp";
+import { Fa } from 'react-icons/fa'; 
 
 import google_play from "../../assets/google_play.png";
 import app_store from "../../assets/app_store.png";
@@ -60,10 +61,10 @@ export default function Footer() {
                     <a href="/"><img src={icon_whats} alt="Icone" /></a>
                     <a href="/"><img src={icon_gmail} alt="Icone" /></a> */}
 
-                    <a href="https://www.facebook.com/profile.php?id=100088731307287&mibextid=LQQJ4d"><img src={icon_facebook} alt="Icone" style={{width: "4%", color: "#000000", marginRight: "10px"}}/></a>
-                    <a href="https://www.instagram.com/yougoappoficial/?hl=pt-br"><img src={icon_instagram} alt="Icone" style={{width: "4%", color: "#000000", marginRight: "10px"}}/></a>
-                    <a href="http://bit.ly/3WS5YU8"><img src={icon_whats} alt="Icone" style={{width: "4%", color: "#000000", marginRight: "10px"}} /></a>
-                    <a href="https://www.threads.net/@yougoappoficial?igshid=MzRlODBiNWFlZA=="><img src={threads} alt="Icone" style={{width: "3.5%", color: "#000000", marginRight: "10px"}}/></a>
+                    <a href="https://www.facebook.com/profile.php?id=100088731307287&mibextid=LQQJ4d"><img src={icon_facebook} alt="Icone" width="20" height="20"  /></a>
+                    <a href="https://www.instagram.com/yougoappoficial/?hl=pt-br"><img src={icon_instagram} alt="Icone" width="20" height="20"/></a>
+                    <a href="http://bit.ly/3WS5YU8"><img src={icon_whats} alt="Icone" width="20" height="20" /></a>
+                    <a href="https://www.threads.net/@yougoappoficial?igshid=MzRlODBiNWFlZA=="><img src={threads} alt="Icone" width="20" height="20"/></a>
                 </div>
                 <p>Termos de Serviço e Privacidade</p>
             </div>

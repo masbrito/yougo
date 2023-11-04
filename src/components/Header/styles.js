@@ -20,11 +20,10 @@ export const HeaderD = styled.header`
         
 
         @media (max-width: 768px) {
-            width: 30%;
-            height: 30%;
+            width: 20%;
+            height: 20%;
             margin-bottom: 5px;
-            background-color:#5E0066
-            width: 100%;
+            background-color:#5E0066           
             
 
         }
@@ -32,14 +31,17 @@ export const HeaderD = styled.header`
 
     .links {
         @media (max-width: 768px) {
+            width: 100vw;
             display: flex;            
             flex-direction: row;
             text-align: center;
-            /*align-items: center;*/
+            align-items: center;
             background-color: #fff;
             font-size: 13px;
-            font-weight: 500;   
-            padding: 10px;            
+            font-weight: 600;   
+            padding: 0;
+            margin: 0;
+                        
         }
     }
 
@@ -52,7 +54,7 @@ export const HeaderD = styled.header`
         
 
         @media (max-width: 768px) {
-            color: #5E0066        
+            color: #5E0066      
                 
         }
     }

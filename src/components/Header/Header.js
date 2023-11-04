@@ -10,8 +10,8 @@ export default function Header() {
                 <a href="/">INÍCIO</a>
                 <a href="/about">SOBRE NÓS</a>
                 <a href="/contact">CONTATO</a>
-                <a href="/tutorial-access">🔶TUTORIAL DE ACESSO</a>
-                <a href="/password">🔷VOUCHER DE LEITURA</a>
+                <a href="/tutorial-access">TUTORIAL DE ACESSO</a>
+                <a href="/password">VOUCHER DE LEITURA</a>
             </div>
         </HeaderD>
     );
