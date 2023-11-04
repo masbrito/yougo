@@ -15,16 +15,15 @@ export const HeaderD = styled.header`
     }
 
     img {
-        width: auto;
-        max-width: 100%;
+        width: 10%;
         height: auto;
-        max-height: 100%;
     
         @media (max-width: 768px) {
-            width: 100%;
+            width: 20%;
             height: auto;
         }
     }
+    
 
     .links {
         @media (max-width: 768px) {
