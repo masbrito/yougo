@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 
 export const Modal = styled.div`
-    background-image: linear-gradient(to bottom, #9300A0, #CB20DA);
+background-color: #9300A0;
     margin-top: 0px;
     display: flex;
     justify-content: space-around;
@@ -73,13 +73,18 @@ export const Modal = styled.div`
 
         p {
             color: #FFF;
-            font-size: 20px;
+            font-size: 14px;
             
         }
         
         h1 {
             color: #FFF;
             font-size: 36px;
+
+            @media (max-width: 768px) {
+                font-size: 25px;
+             
+            }
         }
 
         
@@ -144,20 +149,14 @@ export const Proposal = styled.div`
 export const How = styled.div`
     /* background-color: #CA60C6; */
     background-image: linear-gradient(to bottom, #9300A0, #CB20DA);
-    width: 70%;
-    
-    
+    width: 70%;      
     border-radius: 20px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px 50px;
     color: #FFF;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
 
-    @media (max-width: 390px) {
-        padding: 30px;
-        
-    }
-    
+       
 
     h1 {
         text-align: center;
@@ -179,13 +178,15 @@ export const How = styled.div`
         }
     }
 
-    .text {        
+    .text {     
+        
         width: 35%;
         padding: 20px;
         
         @media (max-width: 768px) {
            padding: 0px;
-           width: 100%;            
+           width: 100%; 
+                      
             
         } 
                
@@ -194,25 +195,42 @@ export const How = styled.div`
         }
         
         h1 {
-            margin-right: 5px;
+            margin-right: 1px;
         }
         
     }
 `;
 export const Text = styled.div`
+background-color: #fff;
+
 .swiper{
-    width: 80%; /* Largura da imagem */
-    
+    width: 70%; /* Largura da imagem */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     margin 0 auto;
+    border-radius: 20px; 
+    padding: 10px 10px;
+
+    
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 5px 0px;
+    margin 0 auto;
+    
+  }
+    
 
     .item{
         width: 70%;
-        height: 70%;
+        height: auto;
         object-fit: cover;
+        border-radius: 20px; 
+        
+  @media (max-width: 768px) {
+    
+  }  
     }
 }
 
@@ -229,8 +247,7 @@ justify-content: center;
 }
 
 .inner{
-    display:flex;
-    
+    display:flex;    
     
 }
 
@@ -257,11 +274,12 @@ justify-content: center;
 `;
 
 export const Plans = styled.div`
-    text-align: center;
+text-align: center;
     padding: 0px 10px;
 
     .title {
-        margin-bottom: 45px;
+        margin-bottom: 30px;
+        
 
         &::after {
             content: "";
@@ -275,19 +293,19 @@ export const Plans = styled.div`
 
     .container {
         
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
     margin: 0 auto;
+    padding: 20px 0px;
     
 
 
         @media (max-width: 768px) {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto; 
+            flex-direction: column; 
+            justify-content: center;
+           
         }
         
         .card {            
@@ -295,12 +313,13 @@ export const Plans = styled.div`
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: justify; 
             background-color: #9300A0;           
             box-shadow: 4px 4px 4px rgba(0,0,0,.18);
             padding: 20px;
             border-radius: 15px;
             margin: 5px;
+            width: 300px;
+            
             
 
             .left {
@@ -311,12 +330,12 @@ export const Plans = styled.div`
             }
             .currency{
                 font-size: 24px;
-                margin-reght: 4px;
+                margin-right: 4px;
                 color: #fff;
             }
 
             h1 {
-                font-size: 80px;
+                font-size: 40px;
                 margin-bottom: 10px;
                 color: #fff;
             }
@@ -332,9 +351,14 @@ export const Plans = styled.div`
             
 
             p {
-                margin-bottom: 15px;
-                text-align: justify;
+                margin-bottom: 10px;
+                text-align: left;
                 color: #fff;
+                font-size: 16px;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
             }
 
             button {
@@ -379,7 +403,9 @@ export const Doubts = styled.div`
     /* background-color: #CA60C6; */
     background-image: linear-gradient(to bottom, #9300A0, #CB20DA);
     padding: 10px 50px;
-    margin-top: 20px;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 20px;
 
     h1 {
         text-align: center;

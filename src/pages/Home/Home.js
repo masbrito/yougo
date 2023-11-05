@@ -58,11 +58,11 @@ export default function Home() {
             <Modal>
                 <div className="text">
                     {/*<img src={VectorYouGo} alt="Vetor YouGO"/>*/}
-                    <h1>DESFRUTE CONHECIMENTO ILIMITADO</h1>
-                    <p>na palma da sua mão!</p>
+                    <h1>Desfrute conhecimento ilimitado</h1>
+                    <p>Tenha acesso a um acervo digital com +6000 conteúdos!</p>
                 </div>
                 
-                <button><a href="/contact">EU QUERO!</a></button>
+               {/*} <button><a href="/contact">EU QUERO!</a></button>*/}
 
             </Modal>
             <Text>
@@ -189,7 +189,7 @@ export default function Home() {
                             <span className='right'>/Mês</span>
                         </div>
 
-                        <p><Check width="30px" style={{ color: "#fff" }} />Acesso ao conteúdo por 6 meses.</p>
+                        <p><Check width="30px" style={{ color: "#fff" }} />Acesso por 6 meses.</p>
                         <p><Check width="30px" style={{ color: "#fff" }} />Suporte especializado.</p>
                         <button><a href="/contact">EU QUERO!</a></button>
                     </div>
@@ -202,7 +202,7 @@ export default function Home() {
                             <span className='right'>/Mês</span>
                         </div>
 
-                        <p><Check width="30px" style={{ color: "#fff" }} />Acesso ao conteúdo por 1 ano.</p>
+                        <p><Check width="30px" style={{ color: "#fff" }} />Acesso por 1 ano.</p>
                         <p><Check width="30px" style={{ color: "#fff" }} />Suporte especializado.</p>
                         <button><a href="/contact">EU QUERO!</a></button>
                     </div>
@@ -215,7 +215,7 @@ export default function Home() {
                             <span className='right'>/Mês</span>
                         </div>
 
-                        <p><Check width="30px" style={{ color: "#fff" }} />Acesso ao conteúdo por 18 meses.</p>
+                        <p><Check width="30px" style={{ color: "#fff" }} />Acesso por 18 meses.</p>
                         <p><Check width="30px" style={{ color: "#fff" }} />Suporte especializado.</p>
                         <button><a href="/contact">EU QUERO!</a></button>
                     </div>
@@ -227,7 +227,7 @@ export default function Home() {
                             <span className='right'>/Mês</span>
                         </div>
 
-                        <p><Check width="30px" style={{ color: "#fff" }} />Acesso ao conteúdo por 2 anos.</p>
+                        <p><Check width="30px" style={{ color: "#fff" }} />Acesso por 2 anos.</p>
                         <p><Check width="30px" style={{ color: "#fff" }} />Suporte especializado.</p>
                         <button><a href="/contact">EU QUERO!</a></button>
                     </div>
