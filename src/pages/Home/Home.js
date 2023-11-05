@@ -13,6 +13,8 @@ import Course from "./assets/Course.png";
 import Ebook from "./assets/Ebook.png";
 import Imagination from "./assets/Imagination.png";
 import Livros from "./assets/livros.png";
+import Mockupcelular from "../../assets/mockupcllr.png";
+
 import Mockup from "../../assets/mockupmao.png";
 import star_icon from "../../assets/star_icon.png";
 import client from "../../assets/novacliente.png";
@@ -23,11 +25,13 @@ import Experienciatwo from '../../assets/experiencia2.png';
 import CardDropdownComp from "../../components/CardDropdown/CardDropdown";
 import { Check } from "@styled-icons/boxicons-regular/Check";
 import { motion } from 'framer-motion';
-import capa1 from '../../assets/capa1.webp';
-import capa2 from '../../assets/capa2.webp';
-import capa3 from '../../assets/capa3.webp';
-import capa4 from '../../assets/capa4.jpg';
-import capa5 from '../../assets/capa5.jpg';
+import capa1 from '../../assets/capa1.png';
+import capa2 from '../../assets/capa2.png';
+import capa3 from '../../assets/capa3.png';
+import capa4 from '../../assets/capa4.png';
+import capa5 from '../../assets/capa5.png';
+import capa6 from '../../assets/capa6.png';
+
 //register();
 import { register } from 'swiper/element/bundle';
 import 'swiper/css';
@@ -38,7 +42,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import {useState, useEffect, useRef} from 'react';
 
 
-const capas = [capa1, capa2, capa3, capa4, capa5]
+const capas = [capa1, capa2, capa3, capa4, capa5, capa6]
 
 
 export default function Home() {
@@ -55,12 +59,10 @@ export default function Home() {
     return (
         <Container>
             <Header />
-            <Modal>
-                <div className="text">
+            <Modal>                
                     {/*<img src={VectorYouGo} alt="Vetor YouGO"/>*/}
                     <h1>Desfrute conhecimento ilimitado</h1>
-                    <p>Tenha acesso a um acervo digital com +6000 conteúdos!</p>
-                </div>
+                    <p>Tenha acesso a um acervo digital com +6000 conteúdos!</p>               
                 
                {/*} <button><a href="/contact">EU QUERO!</a></button>*/}
 
@@ -80,6 +82,12 @@ export default function Home() {
                         <SwiperSlide>
                             <img src={Mockup} alt="Livros" className='item'/>
                         </SwiperSlide>
+
+                        <SwiperSlide>
+                            <img src={Mockupcelular} alt="Livros" className='item'/>
+                        </SwiperSlide>
+
+                        
                     </Swiper>
                 </div>
                 
@@ -90,13 +98,14 @@ export default function Home() {
 
             <Proposal>
                 <p><i>Bem vindo a YouGo!</i></p>
-                <h1>Tenha uma <span style={{ color: "#9300A0" }}>experiência literária</span> com o nosso APP!</h1>
+                <h1>Tenha uma <span style={{ color: "#9300A0" }}>experiência única de aprendizado</span> com o nosso APP!</h1>
 
-                <div className='experiencia'>
+                {/*<div className='experiencia'>
                     <img src={Experiencia} alt="Audiobook" className="icon" />
                     <img src={Experienciatwo} alt="Audiobook" className="icon2" />
-                </div>
-                {/* <div className="icons">
+                </div>*/}
+
+                <div className="icons">
                     <div className="card-text">
                         <img src={Ebook} alt="Ebook" className="icon"/>
                         <h3>+3500<br></br> E-BOOKS</h3>
@@ -113,7 +122,7 @@ export default function Home() {
                         <img src={Imagination} alt="Imaginação" className="icon" />
                         <h3>+1100<br></br>RESENHAS</h3>
                     </div>
-    </div>*/}
+                </div>
             </Proposal>
 
             <How>
@@ -187,11 +196,11 @@ export default function Home() {
                             <span className='currency'>R$:</span>
                             <h1 className='center'>69,90</h1>
                             <span className='right'>/Mês</span>
-                        </div>
+                    </div>
 
                         <p><Check width="30px" style={{ color: "#fff" }} />Acesso por 6 meses.</p>
                         <p><Check width="30px" style={{ color: "#fff" }} />Suporte especializado.</p>
-                        <button><a href="/contact">EU QUERO!</a></button>
+                        {/*<button><a href="/contact">EU QUERO!</a></button>*/}
                     </div>
 
                     <div className="card">
@@ -204,7 +213,7 @@ export default function Home() {
 
                         <p><Check width="30px" style={{ color: "#fff" }} />Acesso por 1 ano.</p>
                         <p><Check width="30px" style={{ color: "#fff" }} />Suporte especializado.</p>
-                        <button><a href="/contact">EU QUERO!</a></button>
+                       {/*<button><a href="/contact">EU QUERO!</a></button>*/}
                     </div>
 
                     <div className="card">
@@ -217,7 +226,7 @@ export default function Home() {
 
                         <p><Check width="30px" style={{ color: "#fff" }} />Acesso por 18 meses.</p>
                         <p><Check width="30px" style={{ color: "#fff" }} />Suporte especializado.</p>
-                        <button><a href="/contact">EU QUERO!</a></button>
+                       {/*<button><a href="/contact">EU QUERO!</a></button>*/}
                     </div>
                     <div className="card">
                         <h3>PLANO BIANUAL</h3>
@@ -229,7 +238,7 @@ export default function Home() {
 
                         <p><Check width="30px" style={{ color: "#fff" }} />Acesso por 2 anos.</p>
                         <p><Check width="30px" style={{ color: "#fff" }} />Suporte especializado.</p>
-                        <button><a href="/contact">EU QUERO!</a></button>
+                       {/*<button><a href="/contact">EU QUERO!</a></button>*/}
                     </div>
 
                 </div>

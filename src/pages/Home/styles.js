@@ -1,25 +1,37 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    color: #606060;    
+    color: #606060;  
     
     
 `;
 
 
 export const Modal = styled.div`
-background-color: #9300A0;
+    background-color: #9300A0;
     margin-top: 0px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 5px;
+    justify-content: center;
+    padding: 0px;
     flex-direction: column;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
 
     @media (max-width: 768px) {
-        flex-direction: column;
+        width: 100%;
+        text-align: center;  
+    }
+
+    h1{
+        @media (max-width: 768px){
+            font-size: 28px;
+            
+        }
         
     }
+
+
     .swiper{
         max-width: 90%;
         padding: 20px 5px;               
@@ -93,25 +105,68 @@ background-color: #9300A0;
     
 `;
 
-
-
-
-
 export const Proposal = styled.div`
-    padding: 20px;  
-    display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    
 
-    p {
-        text-align: center;
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 0px;
     }
     
-    
-   
 
+    .icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0px;
+
+    @media (max-width: 768px) {
+        flex-direction: column; 
+        justify-content: center;
+        width: 100%;     
+       
+    }
+       
+    }
+        .card-text {
+            text-align: center;
+            background-color: #9300A0;
+            border-radius: 15px;
+            width: 100%;
+            padding: 0px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 4px 4px 4px rgba(0,0,0,0.25); 
+
+
+            @media (max-width: 768px){
+                padding: 20px;
+                margin: 0 auto;  
+                width: 70%;             
+
+            }
+        }
+
+        img {
+            width: 60%;            
+        
+        }
+
+        h3{
+            color: #fff;
+        }
 
         
         .experiencia {
@@ -147,19 +202,23 @@ export const Proposal = styled.div`
 `;
 
 export const How = styled.div`
-    /* background-color: #CA60C6; */
     background-image: linear-gradient(to bottom, #9300A0, #CB20DA);
     width: 70%;      
     border-radius: 20px;
     margin: 0 auto;
     padding: 10px 50px;
     color: #FFF;
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25); 
 
+    @media (max-width: 768px){
+        width: 77%;
+        padding: 40px;
+    
+    }  
        
 
     h1 {
-        text-align: center;
+        text-align: center;        
     }
 
     .texts {
@@ -173,7 +232,8 @@ export const How = styled.div`
             flex-direction: column;
             justify-content: space-around;
             padding: 0px;
-            text-align: left;
+            text-align: left;           
+            
             
         }
     }
@@ -185,9 +245,7 @@ export const How = styled.div`
         
         @media (max-width: 768px) {
            padding: 0px;
-           width: 100%; 
-                      
-            
+           width: 100%;    
         } 
                
         h1,h3 {
@@ -201,7 +259,7 @@ export const How = styled.div`
     }
 `;
 export const Text = styled.div`
-background-color: #fff;
+
 
 .swiper{
     width: 70%; /* Largura da imagem */
@@ -275,11 +333,9 @@ justify-content: center;
 
 export const Plans = styled.div`
 text-align: center;
-    padding: 0px 10px;
 
     .title {
-        margin-bottom: 30px;
-        
+        margin-bottom: 30px;        
 
         &::after {
             content: "";
@@ -298,13 +354,15 @@ text-align: center;
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    padding: 20px 0px;
+    padding: 10px 0px;
     
 
 
         @media (max-width: 768px) {
-            flex-direction: column; 
-            justify-content: center;
+            
+            margin: 0 auto;   
+            flex-direction: column;       
+            
            
         }
         
@@ -318,7 +376,16 @@ text-align: center;
             padding: 20px;
             border-radius: 15px;
             margin: 5px;
-            width: 300px;
+            width: 100%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                padding: 0px;
+                margin: 10px;
+                
+                
+                
+            }
             
             
 
@@ -406,6 +473,11 @@ export const Doubts = styled.div`
     margin: 0 auto;
     width: 70%;
     border-radius: 20px;
+
+    @media (max-width: 768px){
+    width: 73%;
+    
+    }
 
     h1 {
         text-align: center;
