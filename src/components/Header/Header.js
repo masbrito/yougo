@@ -1,6 +1,5 @@
 import React from "react";
 import { HeaderD } from "./styles";
-import logo_branca from "../../assets/logo_branca.png";
 import logoyougo from "../../assets/logoyougo.png";
 
 export default function Header() {

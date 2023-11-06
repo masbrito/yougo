@@ -111,8 +111,7 @@ export const Proposal = styled.div`
     text-align: center;
     align-items: center;
     width: 70%;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 
     @media (max-width: 768px) {
         width: 100%;
@@ -196,7 +195,11 @@ export const Proposal = styled.div`
                 width: 70%;
             }
         }
-          
+        .mockup{
+            width: 80%;
+            padding: 0px;
+            margin: 0 auto;
+        } 
           
           
     }

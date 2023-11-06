@@ -13,8 +13,11 @@ import Course from "./assets/Course.png";
 import Ebook from "./assets/Ebook.png";
 import Imagination from "./assets/Imagination.png";
 import Livros from "./assets/livros.png";
-import Mockupcelular from "../../assets/mockupcllr.png";
+import Voucher from "../../assets/voucher.png";
 import Mockupbanner from "../../assets/mockupbanner.png";
+import Mockupcelular from "../../assets/mockupcllr.png";
+
+
 
 import Mockup from "../../assets/mockupmao.png";
 import star_icon from "../../assets/star_icon.png";
@@ -94,9 +97,13 @@ export default function Home() {
                             <img src={Livros} alt="Livros" className='item' />
                         </SwiperSlide>                        
 
-                        <SwiperSlide>
-                            <img src={Mockupcelular} alt="Livros" className='item'/>
+                       
+                       <SwiperSlide>
+                       <a href='/password'>
+                            <img src={Voucher} alt="Livros" className='item'/>
+                        </a>
                         </SwiperSlide>
+                      
 
                         <SwiperSlide>
                             <img src={Mockupbanner} alt="Livros" className='item'/>
@@ -120,6 +127,7 @@ export default function Home() {
                     <img src={Experiencia} alt="Audiobook" className="icon" />
                     <img src={Experienciatwo} alt="Audiobook" className="icon2" />
                 </div>*/}
+                <img src={Mockupcelular} alt="Audiobook" className="mockup" />
 
                 <div className="icons">
                     <div className="card-text">
