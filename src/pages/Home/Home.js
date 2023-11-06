@@ -70,19 +70,25 @@ export default function Home() {
             <Header />
             <Modal>                
                     {/*<img src={VectorYouGo} alt="Vetor YouGO"/>*/}
+                    {/* <div>
                     <h1>Desfrute conhecimento ilimitado</h1>
-                    <p>Tenha acesso a um acervo digital com +6000 conteúdos!</p>               
+                    <p>Tenha acesso a um acervo digital com +6000 conteúdos!</p>
+    </div>   */}        
                 
                {/*} <button><a href="/contact">EU QUERO!</a></button>*/}
 
             </Modal>
             <Text>
+            
             <div className="swiper">
-                    <Swiper
+            <h1>Desfrute conhecimento ilimitado</h1>
+            <p>Tenha acesso a um acervo digital com +6000 conteúdos!</p>
+                    <Swiper className='slide'
 
                         slidesPerView={1}
                         pagination={{ clickable: true }}
                         navigation
+                        autoplay={{ delay: 3000 }}
                     >
                         <SwiperSlide>
                             <img src={Livros} alt="Livros" className='item' />
@@ -139,24 +145,24 @@ export default function Home() {
                 <h1>Como funciona ?</h1>
                 <div className="texts">
                     <div className="text">
-                        <h1>1.</h1>
+                        <h2>1.</h2>
                         <h3>Assine o nossos plano</h3>
                         <p>Escolha o plano visitando um dos nossos pontos de venda</p>
                     </div>
                     <div className="text">
-                        <h1>2.</h1>
+                        <h2>2.</h2>
                         <h3>Baixe nosso aplicativo</h3>
                         <p>Acesse a loja de aplicativos do seu celular e baixe o nosso APP</p>
                     </div>
                 </div>
                 <div className="texts">
                     <div className="text">
-                        <h1>3.</h1>
+                        <h2>3.</h2>
                         <h3>Faça o login</h3>
                         <p>Entre com o seu usuário e senha</p>
                     </div>
                     <div className="text">
-                        <h1>4.</h1>
+                        <h2>4.</h2>
                         <h3>Acesse o melhor conteúdo</h3>
                         <p>Ouça e leia resenhas, aprenda uma nova habilidade com os nossos cursos e ebooks</p>
                     </div>
@@ -258,8 +264,7 @@ export default function Home() {
 
                 <div className='tablet'>
                 <h1>
-                GANHE<br></br>
-                + 1 APP
+                Bônus<br></br>+1 app 
                 </h1>
                 {/*<button><a href="/PasswordForProof">GRÁTIS!</a></button> */}           
                 <img src={Tablet} alt="Tablet" className='imgtablet' />

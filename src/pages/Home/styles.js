@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 
 export const Modal = styled.div`
-    background-color: #9300A0;
+    background-image: linear-gradient(to bottom, #9300A0, #CB20DA);
     margin-top: 0px;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ export const Modal = styled.div`
 
     h1{
         @media (max-width: 768px){
-            font-size: 28px;
+            font-size: 26px;
             
         }
         
@@ -34,7 +34,8 @@ export const Modal = styled.div`
 
     .swiper{
         max-width: 90%;
-        padding: 20px 5px;               
+        padding: 20px 5px;    
+        background-color: red;           
     }   
 
     img {
@@ -248,7 +249,7 @@ export const How = styled.div`
            width: 100%;    
         } 
                
-        h1,h3 {
+        h2,h3 {
             display: inline-block;
         }
         
@@ -260,16 +261,18 @@ export const How = styled.div`
 `;
 export const Text = styled.div`
 
-
 .swiper{
-    width: 70%; /* Largura da imagem */
-    text-align: center;
+    background-color: #9300A0;
+    width: 100%; /* Largura da imagem */
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
     margin 0 auto;
-    border-radius: 20px; 
     padding: 10px 10px;
+    color: #fff;   
+
 
     
   @media (max-width: 768px) {
@@ -277,6 +280,14 @@ export const Text = styled.div`
     padding: 5px 0px;
     margin 0 auto;
     
+  }
+  .slide{
+    width: 50%; 
+
+    @media (max-width: 768px){
+    width: 100%; 
+    }
+
   }
     
 
@@ -342,6 +353,7 @@ justify-content: center;
     flex-direction: column;
     margin: 0 auto;   
     font-size: 36px;
+    margin-bottom: 20px;
 
     @media (max-width: 768px) {
         width: 97%;
@@ -349,17 +361,30 @@ justify-content: center;
         flex-direction: column;
         text-align: center;  
         margin: 0 auto;
+        margin-bottom: 20px;
        
     }
-
+h1{
+    &::after {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: #CA60C6;
+        display: block;
+        margin: 1px auto;
+    }
+}
     .tablet{
         align-items: center;
         display: flex;
         margin: 0 auto;
         justify-content: space-between;
+        padding-botoom: 10px;
+
 
         @media (max-width: 768px){
         flex-direction: column;
+        padding-botoom: 10px;
         
         }
 
@@ -371,10 +396,11 @@ justify-content: center;
         background-color: #9300A0;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 25px;
+        padding-bottom: 0px;
 
         @media (max-width: 768px){
-            margin: 0 auto;
+
+
             }
         
         
@@ -382,17 +408,15 @@ justify-content: center;
 }
 
 img{
-    width: 30%;
+    width: 25%;
     align-items: center;
+    padding: 10px;
     margin: 0 auto;
     
 }
 .imgtablet{
-     width: 50%;
-     @media (max-width: 768px){
-        
-       
-    }
+     width: 60%;
+     
     
 }
     

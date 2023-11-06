@@ -6,16 +6,14 @@ export const HeaderD = styled.header`
     justify-content: center;
     align-items: center;
     background-color: #5E0066;
-    padding: 0px 15px;
+    padding: 0px 0px;
     font-weight: 400; 
        
     @media (max-width: 768px) {
         flex-direction: column; 
         width: 100%;
         margin: 0 auto;
-        align-items: center;
-        padding: 0px 0px;
-        
+        align-items: center;       
                  
     }
 
@@ -25,7 +23,7 @@ export const HeaderD = styled.header`
         padding: 0px 0px;
     
         @media (max-width: 768px) {
-            width: 30%;
+            width: 40%;
             height: auto;
             margin: 0 auto;
         }
@@ -43,7 +41,7 @@ export const HeaderD = styled.header`
             background-color: #fff;
             font-size: 14px;
             font-weight: 500;
-            
+            padding: 10px 0px;         
             
                         
         }
