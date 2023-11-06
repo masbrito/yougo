@@ -11,32 +11,40 @@ export const HeaderD = styled.header`
        
     @media (max-width: 768px) {
         flex-direction: column; 
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        padding: 0px 0px;
+        
                  
     }
 
     img {
-        width: 10%;
+        width: 15%;
         height: auto;
+        padding: 0px 0px;
     
         @media (max-width: 768px) {
-            width: 20%;
+            width: 30%;
             height: auto;
+            margin: 0 auto;
         }
     }
     
 
     .links {
         @media (max-width: 768px) {
-            width: 100vw;
+            width: 100%;
             display: flex;            
             flex-direction: row;
+            justify-content: center;
             text-align: center;
             align-items: center;
             background-color: #fff;
-            font-size: 13px;
-            font-weight: 600;   
-            padding: 0;
-            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+            
+            
                         
         }
     }
@@ -50,7 +58,8 @@ export const HeaderD = styled.header`
         
 
         @media (max-width: 768px) {
-            color: #5E0066      
+            color: #5E0066 
+                 
                 
         }
     }

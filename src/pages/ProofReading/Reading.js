@@ -8,14 +8,14 @@ import Player from "../../components/Player/Player";
 
 import HeadPhone from "./assets/headphone.png";
 
-import AnneFrank from "../../data/assets/anne.png";
-import Habitos from "../../data/assets/habitos.png";
-import JaneEyre from "../../data/assets/jane_eyre.png";
-import OSegredo from "../../data/assets/o_segredo.png";
-import OrgulhoPreconceito from "../../data/assets/org_precon.png";
-import RapidoDevagar from "../../data/assets/rapido_devagar.jpg";
-import Sapien from "../../data/assets/sapiens.jpg";
-import Story from "../../data/assets/story.png";
+import Antifragil from "../../data/assets/antifragil.png";
+import Comece from "../../data/assets/comece.png";
+import Contagio from "../../data/assets/contagio.png";
+import Opoder from "../../data/assets/opoder.png";
+import Ossegredos from "../../data/assets/ossegredos.png";
+import Outlander from "../../data/assets/Outlander.png";
+import Quemevoce from "../../data/assets/Quemevoce.png";
+import Stevejobs from "../../data/assets/stevejobs.png";
 
 export default function Reading() {
     return(
@@ -30,14 +30,15 @@ export default function Reading() {
                 </div>
 
                 <div className="container images">
-                    <img src={AnneFrank} alt="Capa AnneFrank" />
-                    <img src={Habitos} alt="Capa Habitos" />
-                    <img src={JaneEyre} alt="Capa JaneEyre" />
-                    <img src={OSegredo} alt="Capa OSegredo" />
-                    <img src={OrgulhoPreconceito} alt="Capa OrgulhoPreconceito" />
-                    <img src={RapidoDevagar} alt="Capa RapidoDevagar" />
-                    <img src={Sapien} alt="Capa Sapien" />
-                    <img src={Story} alt="Capa Story" />
+                    <img src={Antifragil} alt="Capa Antifragil" />
+                    <img src={Comece} alt="Capa Comece" />
+                    <img src={Contagio} alt="Capa Contagio" />
+                    <img src={Opoder} alt="Capa Opoder" />
+                    <img src={Ossegredos} alt="Capa Ossegredos" />
+                    <img src={Outlander} alt="Capa Outlander" />
+                    <img src={Quemevoce} alt="Capa Quemevoce" />
+                    <img src={Stevejobs} alt="Capa Stevejobs" />
+
                 </div>
 
                 <div className="card-container">

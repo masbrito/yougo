@@ -14,6 +14,7 @@ import Ebook from "./assets/Ebook.png";
 import Imagination from "./assets/Imagination.png";
 import Livros from "./assets/livros.png";
 import Mockupcelular from "../../assets/mockupcllr.png";
+import Mockupbanner from "../../assets/mockupbanner.png";
 
 import Mockup from "../../assets/mockupmao.png";
 import star_icon from "../../assets/star_icon.png";
@@ -77,15 +78,16 @@ export default function Home() {
                     >
                         <SwiperSlide>
                             <img src={Livros} alt="Livros" className='item' />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img src={Mockup} alt="Livros" className='item'/>
-                        </SwiperSlide>
+                        </SwiperSlide>                        
 
                         <SwiperSlide>
                             <img src={Mockupcelular} alt="Livros" className='item'/>
                         </SwiperSlide>
+
+                        <SwiperSlide>
+                            <img src={Mockupbanner} alt="Livros" className='item'/>
+                        </SwiperSlide>
+
 
                         
                     </Swiper>

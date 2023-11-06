@@ -262,6 +262,7 @@ export const Text = styled.div`
 
 
 .swiper{
+    
     width: 70%; /* Largura da imagem */
     text-align: center;
     display: flex;
