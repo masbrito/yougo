@@ -42,6 +42,14 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {useState, useEffect, useRef} from 'react';
 
+import Tablet from '../../assets/tablet.png';
+import Bittrainners from '../../assets/bittrainners.png';
+import Supercomics from '../../assets/supercomics.png';
+import Logo from '../../assets/logoyougo.png';
+
+
+
+
 
 const capas = [capa1, capa2, capa3, capa4, capa5, capa6]
 
@@ -245,6 +253,30 @@ export default function Home() {
 
                 </div>
             </Plans>
+            <Text>
+                <div className='voucher'>
+
+                <div className='tablet'>
+                <h1>
+                GANHE<br></br>
+                + 1 APP
+                </h1>
+                {/*<button><a href="/PasswordForProof">GRÁTIS!</a></button> */}           
+                <img src={Tablet} alt="Tablet" className='imgtablet' />
+                </div>
+
+                <div className='parceiros'>
+                <img src={Supercomics} alt="Supercomics" />
+                <img src={Bittrainners} alt="Bittrainners" />
+                <img src={Logo} alt="You Go" />
+
+                </div>
+               
+
+
+                </div>
+                
+            </Text>
 
             <Doubts>
                 <h1>Dúvidas</h1>
