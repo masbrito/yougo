@@ -13,7 +13,7 @@ import Course from "./assets/Course.png";
 import Ebook from "./assets/Ebook.png";
 import Imagination from "./assets/Imagination.png";
 import Livros from "./assets/livros.png";
-import Voucher from "../../assets/voucher.png";
+import Voucher from "../../assets/voucher.PNG";
 import Mockupbanner from "../../assets/mockupbanner.png";
 import Mockupcelular from "../../assets/mockupcllr.png";
 
@@ -28,7 +28,7 @@ import Experienciatwo from '../../assets/experiencia2.png';
 
 import CardDropdownComp from "../../components/CardDropdown/CardDropdown";
 import { Check } from "@styled-icons/boxicons-regular/Check";
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import capa1 from '../../assets/capa1.png';
 import capa2 from '../../assets/capa2.png';
 import capa3 from '../../assets/capa3.png';
@@ -60,12 +60,24 @@ const capas = [capa1, capa2, capa3, capa4, capa5, capa6]
 export default function Home() {
 
     const carousel = useRef();
+    const controls = useAnimation();
     const [width, setWidth] = useState(0);
 
     useEffect(() => {
-        console.log=(carousel.current?.scrollWidth, carousel.current?.offsetWidth)
-        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
-    },[])
+        // Calcula a largura total do carrossel
+        const totalWidth = carousel.current?.scrollWidth - carousel.current?.offsetWidth;
+    
+        // Inicia a animação com autoplay
+        const startAutoplay = async () => {
+          while (true) {
+            await controls.start({ x: -totalWidth });
+            await controls.start({ x: 0 });
+          }
+        };
+    
+        setWidth(totalWidth);
+        startAutoplay();
+      }, [controls]);
 
 
     return (
@@ -91,7 +103,7 @@ export default function Home() {
                         slidesPerView={1}
                         pagination={{ clickable: true }}
                         navigation
-                        autoplay={{ delay: 3000 }}
+                        autoplay={{ delay: 4000 }}
                     >
                         <SwiperSlide>
                             <img src={Livros} alt="Livros" className='item' />
@@ -186,8 +198,8 @@ export default function Home() {
                         drag='x'
                         dragConstraints={{right: 0, left: - width }}
                         initial={{x: 100}}
-                        animate={{x: 0}}
-                        transition={{duration: 0.8}}                        
+                        animate={controls}
+                        transition={{ duration: 30, type: 'tween', ease: 'linear' }}                      
                         >
                             {capas.map(image => (
                                 <motion.div className='item' key={image}>

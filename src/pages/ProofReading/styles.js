@@ -11,15 +11,16 @@ export const Destribution = styled.div`
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding: 20px;
+        padding: 20px;     
 
         @media (max-width: 768px) {
             flex-direction: column;
             text-align: center;
         }
 
-        img {
+        img {         
             width: 20%;
+            border-radius: 15px;     
 
             @media (max-width: 768px) {
                 width: 50%;
@@ -56,6 +57,7 @@ export const Destribution = styled.div`
 
         img {
             margin: 10px 5px;
+            border-radius: 15px;
         }
     }
 `;
